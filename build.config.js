@@ -4,9 +4,15 @@
 		requireLib: '../node_modules/requirejs/require'
 	},
 	optimize: "none",
-	name: "main",
-	include : ['requireLib'],
-	// dir : './dist/'
-	generateSourceMaps : true,
-	out: 'dist/bundle.js'
+	// include: ['requireLib'],
+
+	modules: [{
+		name: 'main',
+		include : ['requireLib']
+	}, {
+		name: 'main2'
+	}],
+	generateSourceMaps: true,
+	// out: 'dist/bundle.js'
+	dir: './dist/'
 })
