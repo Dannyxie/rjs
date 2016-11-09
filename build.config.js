@@ -12,6 +12,7 @@
 	}, {
 		name: 'main2'
 	}],
+	namespace: 'deryck',
 	generateSourceMaps: true,
 	// out: 'dist/bundle.js'
 	dir: './dist/'
